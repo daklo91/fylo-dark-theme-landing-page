@@ -1,0 +1,170 @@
+:root {
+  /* ========================
+     DESIGN TOKENS
+     Generated from Figma variables
+     ======================== */
+
+  /* --- Colors --- */
+
+  /* White & Black */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Red */
+  --color-red-500: #ff4242;
+
+  /* Gray */
+  --color-gray-400: #c0c0c0;
+
+  /* Blue */
+  --color-blue-250: #8adae3;
+  --color-blue-300: #62e0d9;
+
+  /* Navy */
+  --color-navy-50: #dfe4f0;
+  --color-navy-800: #202a3c;
+  --color-navy-850: #1b2330;
+  --color-navy-900: #181f2b;
+  --color-navy-950: #0b1524;
+
+  /* --- Spacing --- */
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-700: 56px;
+  --spacing-800: 64px;
+  --spacing-900: 72px;
+  --spacing-1000: 80px;
+}
+
+/* --- Gradient --- */
+
+.gradient-primary {
+  background: linear-gradient(135deg, #62e0d9 0%, #34a0cd 100%);
+}
+
+/* --- Typography --- */
+
+/* Heading font: Raleway */
+/* Body font: Open Sans */
+
+/* Text Preset 1 — Heading XL */
+.text-preset-1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 2 — Heading L */
+.text-preset-2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 3 Bold — Heading M */
+.text-preset-3-bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 3 Regular — Body M (Raleway) */
+.text-preset-3-regular {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 4 — Label Bold */
+.text-preset-4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 5 — Caption (Raleway) */
+.text-preset-5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 6 — Body L */
+.text-preset-6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 7 Bold — Body M Bold */
+.text-preset-7-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 7 Regular — Body M */
+.text-preset-7-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 8 — Body S */
+.text-preset-8 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+/* Text Preset 9 Bold — Caption Bold */
+.text-preset-9-bold {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+/* Text Preset 9 Regular — Caption */
+.text-preset-9-regular {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* Text Preset 10 — Micro */
+.text-preset-10 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
