@@ -10,6 +10,14 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
@@ -26,11 +34,23 @@
     </style>
   </head>
   <body>
-    <header>
-      <a href="#"><img src="./images/logo.svg" alt="Fylo Logo" /></a>
-      <a href="">Features</a>
-      <a href="">Team</a>
-      <a href="">Sign In</a>
+    <header class="header-main">
+      <a href="#" class="header-logo"
+        ><img src="./images/logo.svg" alt="Fylo Logo"
+      /></a>
+      <nav class="header-nav-links">
+        <ul>
+          <li>
+            <a href="" data-nav-link-text="Features">Features</a>
+          </li>
+          <li>
+            <a href="" data-nav-link-text="Team">Team</a>
+          </li>
+          <li>
+            <a href="" data-nav-link-text="Sign In">Sign In</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>

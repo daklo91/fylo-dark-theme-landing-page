@@ -49,122 +49,160 @@
 
 /* --- Typography --- */
 
-/* Heading font: Raleway */
-/* Body font: Open Sans */
-
 /* Text Preset 1 — Heading XL */
-.text-preset-1 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
-  letter-spacing: 0px;
+:root {
+  --text-preset-1-font-family: "Raleway", sans-serif;
+  --text-preset-1-font-weight: 700;
+  --text-preset-1-font-size: 40px;
+  --text-preset-1-line-height: 1.2;
+  --text-preset-1-letter-spacing: 0;
+
+  /* Text Preset 2 — Heading L */
+  --text-preset-2-font-family: "Raleway", sans-serif;
+  --text-preset-2-font-weight: 700;
+  --text-preset-2-font-size: 20px;
+  --text-preset-2-line-height: 1.2;
+  --text-preset-2-letter-spacing: 0;
+
+  /* Text Preset 3 Bold — Heading M */
+  --text-preset-3-bold-font-family: "Raleway", sans-serif;
+  --text-preset-3-bold-font-weight: 700;
+  --text-preset-3-bold-font-size: 16px;
+  --text-preset-3-bold-line-height: 1.2;
+  --text-preset-3-bold-letter-spacing: 0;
+
+  /* Text Preset 3 Regular — Body M */
+  --text-preset-3-regular-font-family: "Raleway", sans-serif;
+  --text-preset-3-regular-font-weight: 400;
+  --text-preset-3-regular-font-size: 16px;
+  --text-preset-3-regular-line-height: 1.2;
+  --text-preset-3-regular-letter-spacing: 0;
+
+  /* Text Preset 4 — Label Bold */
+  --text-preset-4-font-family: "Raleway", sans-serif;
+  --text-preset-4-font-weight: 700;
+  --text-preset-4-font-size: 14px;
+  --text-preset-4-line-height: 1.2;
+  --text-preset-4-letter-spacing: 0;
+
+  /* Text Preset 5 — Caption */
+  --text-preset-5-font-family: "Raleway", sans-serif;
+  --text-preset-5-font-weight: 400;
+  --text-preset-5-font-size: 12px;
+  --text-preset-5-line-height: 1.2;
+  --text-preset-5-letter-spacing: 0;
+
+  /* Text Preset 6 — Body L */
+  --text-preset-6-font-family: "Open Sans", sans-serif;
+  --text-preset-6-font-weight: 400;
+  --text-preset-6-font-size: 20px;
+  --text-preset-6-line-height: 1.5;
+  --text-preset-6-letter-spacing: 0;
+
+  /* Text Preset 7 Bold — Body M Bold */
+  --text-preset-7-bold-font-family: "Open Sans", sans-serif;
+  --text-preset-7-bold-font-weight: 700;
+  --text-preset-7-bold-font-size: 16px;
+  --text-preset-7-bold-line-height: 1.5;
+  --text-preset-7-bold-letter-spacing: 0;
+
+  /* Text Preset 7 Regular — Body M */
+  --text-preset-7-regular-font-family: "Open Sans", sans-serif;
+  --text-preset-7-regular-font-weight: 400;
+  --text-preset-7-regular-font-size: 16px;
+  --text-preset-7-regular-line-height: 1.5;
+  --text-preset-7-regular-letter-spacing: 0;
+
+  /* Text Preset 8 — Body S */
+  --text-preset-8-font-family: "Open Sans", sans-serif;
+  --text-preset-8-font-weight: 400;
+  --text-preset-8-font-size: 14px;
+  --text-preset-8-line-height: 1.5;
+  --text-preset-8-letter-spacing: 0;
+
+  /* Text Preset 9 Bold — Caption Bold */
+  --text-preset-9-bold-font-family: "Open Sans", sans-serif;
+  --text-preset-9-bold-font-weight: 700;
+  --text-preset-9-bold-font-size: 10px;
+  --text-preset-9-bold-line-height: 1.5;
+  --text-preset-9-bold-letter-spacing: 0.5px;
+
+  /* Text Preset 9 Regular — Caption */
+  --text-preset-9-regular-font-family: "Open Sans", sans-serif;
+  --text-preset-9-regular-font-weight: 400;
+  --text-preset-9-regular-font-size: 10px;
+  --text-preset-9-regular-line-height: 1.8;
+  --text-preset-9-regular-letter-spacing: 0.5px;
+
+  /* Text Preset 10 — Micro */
+  --text-preset-10-font-family: "Open Sans", sans-serif;
+  --text-preset-10-font-weight: 400;
+  --text-preset-10-font-size: 7px;
+  --text-preset-10-line-height: 1.5;
+  --text-preset-10-letter-spacing: 0.5px;
 }
 
-/* Text Preset 2 — Heading L */
-.text-preset-2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0px;
+/* ! TEMPORARY, Please remove after mobile first is done */
+img {
+  width: 100%;
 }
 
-/* Text Preset 3 Bold — Heading M */
-.text-preset-3-bold {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0px;
+/* STYLING */
+
+body {
+  background-color: var(--color-navy-800);
+  color: var(--color-white);
+  margin: 0;
 }
 
-/* Text Preset 3 Regular — Body M (Raleway) */
-.text-preset-3-regular {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.2;
-  letter-spacing: 0px;
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-300);
 }
 
-/* Text Preset 4 — Label Bold */
-.text-preset-4 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0px;
+.header-logo {
+  width: 80px;
 }
 
-/* Text Preset 5 — Caption (Raleway) */
-.text-preset-5 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0px;
+.header-logo img {
+  display: block;
+  width: 100%;
 }
 
-/* Text Preset 6 — Body L */
-.text-preset-6 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: 0px;
+.header-nav-links ul {
+  display: flex;
+  /* This calc is to adjust for the ::after on the a elements below (make text-weight grow in place instead of pushing content). */
+  gap: calc(var(--spacing-300) - 1px);
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
-/* Text Preset 7 Bold — Body M Bold */
-.text-preset-7-bold {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0px;
+.header-nav-links ul li {
+  text-align: center;
 }
 
-/* Text Preset 7 Regular — Body M */
-.text-preset-7-regular {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0px;
+.header-nav-links ul a {
+  font-family: var(--text-preset-5-font-family);
+  font-weight: var(--text-preset-5-font-weight);
+  font-size: var(--text-preset-5-font-size);
+  line-height: var(--text-preset-5-line-height);
+  letter-spacing: var(--text-preset-5-letter-spacing);
+
+  color: var(--color-white);
+  text-decoration: none;
 }
 
-/* Text Preset 8 — Body S */
-.text-preset-8 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0px;
+.header-nav-links ul a:hover {
+  font-weight: var(--text-preset-3-bold-font-weight);
 }
 
-/* Text Preset 9 Bold — Caption Bold */
-.text-preset-9-bold {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-}
-
-/* Text Preset 9 Regular — Caption */
-.text-preset-9-regular {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.8;
-  letter-spacing: 0.5px;
-}
-
-/* Text Preset 10 — Micro */
-.text-preset-10 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 7px;
-  line-height: 1.5;
-  letter-spacing: 0.5px;
+.header-nav-links ul a::after {
+  content: attr(data-nav-link-text);
+  font-weight: var(--text-preset-3-bold-font-weight);
+  visibility: hidden;
+  display: block;
+  height: 0;
 }
