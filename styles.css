@@ -149,11 +149,19 @@ img {
 
 /* STYLING */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--color-navy-800);
   color: var(--color-white);
   margin: 0;
 }
+
+/* HEADER */
 
 .header-main {
   display: flex;
@@ -205,4 +213,81 @@ body {
   visibility: hidden;
   display: block;
   height: 0;
+}
+
+/* HERO SECTION */
+
+/* #hero-section {
+  background-image: url("./images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+} */
+
+#hero-section {
+  background-image:
+    url("./images/bg-curvy-mobile.svg"),
+    linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent calc(100% - 200px),
+      var(--color-navy-900) calc(100% - 200px),
+      var(--color-navy-900) 100%
+    );
+
+  background-repeat: no-repeat;
+  background-position:
+    center calc(100% - 195px),
+    center;
+
+  background-size:
+    auto,
+    100% 100%;
+}
+
+.hero-image {
+  width: 100%;
+  padding: 0px var(--spacing-400);
+  margin-bottom: var(--spacing-900);
+}
+
+.hero-headline {
+  font-family: var(--text-preset-2-font-family);
+  font-weight: var(--text-preset-2-font-weight);
+  font-size: var(--text-preset-2-font-size);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+
+  margin: 0 var(--spacing-300);
+  text-align: center;
+}
+.hero-text {
+  font-family: var(--text-preset-8-font-family);
+  font-weight: var(--text-preset-8-font-weight);
+  font-size: var(--text-preset-8-font-size);
+  line-height: var(--text-preset-8-line-height);
+  letter-spacing: var(--text-preset-8-letter-spacing);
+
+  text-align: center;
+  margin: var(--spacing-300) var(--spacing-500);
+}
+.hero-button {
+  font-family: var(--text-preset-4-font-family);
+  font-weight: var(--text-preset-4-font-weight);
+  font-size: var(--text-preset-4-font-size);
+  line-height: var(--text-preset-4-line-height);
+  letter-spacing: var(--text-preset-4-letter-spacing);
+
+  padding: var(--spacing-200) var(--spacing-1000);
+  border-radius: 24px;
+  color: var(--color-white);
+  text-decoration: none;
+  background: linear-gradient(135deg, #62e0d9 0%, #34a0cd 100%);
+  margin: auto;
+  display: block;
+  width: fit-content;
+}
+
+.hero-button:hover {
+  background: none;
+  background-color: var(--color-blue-250);
 }
