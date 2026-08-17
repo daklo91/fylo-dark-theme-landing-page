@@ -334,3 +334,61 @@ body {
 
   margin: 0px;
 }
+
+/* PRODUCT INFORMATION */
+
+#product-information-section {
+  padding: 0px var(--spacing-300) 150px;
+  background-color: var(--color-navy-900);
+}
+
+#product-information-section img {
+  width: 100%;
+}
+
+#product-information-section h3 {
+  font-family: var(--text-preset-3-bold-font-family);
+  font-weight: var(--text-preset-3-bold-font-weight);
+  font-size: var(--text-preset-3-bold-font-size);
+  line-height: var(--text-preset-3-bold-line-height);
+  letter-spacing: var(--text-preset-3-bold-letter-spacing);
+
+  margin-top: var(--spacing-600);
+}
+#product-information-section p {
+  font-family: var(--text-preset-8-font-family);
+  font-weight: var(--text-preset-8-font-weight);
+  font-size: var(--text-preset-8-font-size);
+  line-height: var(--text-preset-8-line-height);
+  letter-spacing: var(--text-preset-8-letter-spacing);
+
+  margin: var(--spacing-200) 0px;
+}
+
+.text-link {
+  font-family: var(--text-preset-8-font-family);
+  font-weight: var(--text-preset-8-font-weight);
+  font-size: var(--text-preset-8-font-size);
+  line-height: var(--text-preset-8-line-height);
+  letter-spacing: var(--text-preset-8-letter-spacing);
+
+  color: var(--color-blue-300);
+
+  border-bottom: 1px solid var(--color-blue-300);
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: var(--spacing-100);
+}
+
+.text-link:hover {
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.text-link img {
+  max-width: 12px;
+  width: 100%;
+}
