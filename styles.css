@@ -417,7 +417,7 @@ body {
 }
 
 #product-review-section li {
-  background-color: var(--color-navy-850);
+  background-color: var(--color-navy-800);
   box-shadow: 0 0 8px 4px rgba(56, 56, 56, 0.0459);
   padding: var(--spacing-300);
   border-radius: 4px;
