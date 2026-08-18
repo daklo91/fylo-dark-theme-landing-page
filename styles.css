@@ -264,7 +264,7 @@ body {
   text-align: center;
   margin: var(--spacing-300) var(--spacing-500);
 }
-.hero-button {
+.primary-cta-button {
   font-family: var(--text-preset-4-font-family);
   font-weight: var(--text-preset-4-font-weight);
   font-size: var(--text-preset-4-font-size);
@@ -281,7 +281,7 @@ body {
   width: fit-content;
 }
 
-.hero-button:hover {
+.primary-cta-button:hover {
   background: none;
   background-color: var(--color-blue-250);
 }
@@ -418,7 +418,7 @@ body {
 
 #product-review-section li {
   background-color: var(--color-navy-800);
-  box-shadow: 0 0 8px 4px rgba(56, 56, 56, 0.0459);
+  box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.046);
   padding: var(--spacing-300);
   border-radius: 4px;
 }
@@ -462,7 +462,91 @@ body {
   letter-spacing: var(--text-preset-10-letter-spacing);
 }
 
-/* 
-* FOR SIGN UP:   box-shadow: 5px 5px 8px rgb(var(--color-black) / 25%);
+/* SIGN UP SECTION */
 
-*/
+#sign-up-section {
+  background-color: var(--color-navy-900);
+  padding: 0px var(--spacing-300) 84px;
+  text-align: center;
+}
+
+.sign-up-container {
+  background-color: var(--color-navy-850);
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254);
+  border-radius: 9px;
+  margin: auto;
+  padding: var(--spacing-500) var(--spacing-300);
+}
+
+#sign-up-section h2 {
+  font-family: var(--text-preset-2-font-family);
+  font-weight: var(--text-preset-2-font-weight);
+  font-size: var(--text-preset-2-font-size);
+  line-height: var(--text-preset-2-line-height);
+  letter-spacing: var(--text-preset-2-letter-spacing);
+
+  margin-top: 0px;
+}
+
+.sign-up-text {
+  font-family: var(--text-preset-8-font-family);
+  font-weight: var(--text-preset-8-font-weight);
+  font-size: var(--text-preset-8-font-size);
+  line-height: var(--text-preset-8-line-height);
+  letter-spacing: var(--text-preset-8-letter-spacing);
+
+  margin-bottom: var(--spacing-400);
+}
+
+#sign-up-email {
+  font-family: var(--text-preset-8-font-family);
+  font-weight: var(--text-preset-8-font-weight);
+  font-size: var(--text-preset-8-font-size);
+  line-height: var(--text-preset-8-line-height);
+  letter-spacing: var(--text-preset-8-letter-spacing);
+
+  padding: var(--spacing-200) 0px;
+  width: 100%;
+  border-radius: 24px;
+  border: 0;
+  text-align: center;
+}
+
+#sign-up-email::placeholder {
+  color: var(--color-gray-400);
+}
+
+input[type="submit"].primary-cta-button {
+  padding: var(--spacing-200) var(--spacing-1000);
+  width: 100%;
+  border: 0;
+}
+
+#sign-up-error {
+  font-family: var(--text-preset-9-bold-font-family);
+  font-weight: var(--text-preset-9-bold-font-weight);
+  font-size: var(--text-preset-9-bold-font-size);
+  line-height: var(--text-preset-9-bold-line-height);
+  letter-spacing: var(--text-preset-9-bold-letter-spacing);
+
+  color: var(--color-red-500);
+  margin: 2px 0;
+
+  visibility: hidden;
+}
+
+#sign-up-error.show-error {
+  visibility: visible;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

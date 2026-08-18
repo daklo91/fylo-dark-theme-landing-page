@@ -23,6 +23,8 @@
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
 
+    <script src="script.js" defer></script>
+
     <style>
       .attribution {
         font-size: 0.6875rem;
@@ -67,7 +69,7 @@
           family, and co-workers.
         </p>
 
-        <a class="hero-button" href="">Get Started</a>
+        <a class="primary-cta-button" href="">Get Started</a>
       </section>
 
       <section id="features-section">
@@ -175,6 +177,7 @@
           </svg>
         </a>
       </section>
+
       <section id="product-review-section">
         <img src="images/bg-quotes.png" alt="" class="quote-bg-img" />
         <ul>
@@ -228,18 +231,40 @@
       </section>
 
       <section id="sign-up-section">
-        <h2>Get early access today</h2>
+        <div class="sign-up-container">
+          <h2>Get early access today</h2>
 
-        <p>
-          It only takes a minute to sign up and our free starter tier is
-          extremely generous. If you have any questions, our support team would
-          be happy to help you.
-        </p>
+          <p class="sign-up-text">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
 
-        <form action="onSignUp">
-          <input type="email" />
-          <input type="submit" value="Get Started For Free" />
-        </form>
+          <form id="sign-up-form" novalidate>
+            <label for="sign-up-email" class="visually-hidden">
+              Email address
+            </label>
+
+            <input
+              id="sign-up-email"
+              type="email"
+              placeholder="email@example.com"
+              required
+              aria-describedby="sign-up-error"
+              aria-invalid="false"
+            />
+
+            <p id="sign-up-error" aria-live="polite">
+              Error, please check your email
+            </p>
+
+            <input
+              class="primary-cta-button"
+              type="submit"
+              value="Get Started For Free"
+            />
+          </form>
+        </div>
       </section>
     </main>
     <footer>
