@@ -466,8 +466,16 @@ body {
 
 #sign-up-section {
   background-color: var(--color-navy-900);
-  padding: 0px var(--spacing-300) 84px;
+  padding: 0px var(--spacing-300) 0px;
   text-align: center;
+
+  background: linear-gradient(
+    to bottom,
+    var(--color-navy-900) 0%,
+    var(--color-navy-900) 50%,
+    var(--color-navy-950) 50%,
+    var(--color-navy-950) 100%
+  );
 }
 
 .sign-up-container {
