@@ -142,11 +142,6 @@
   --text-preset-10-letter-spacing: 0.5px;
 }
 
-/* ! TEMPORARY, Please remove after mobile first is done */
-img {
-  width: 100%;
-}
-
 /* STYLING */
 
 *,
@@ -229,12 +224,13 @@ body {
     );
 
   background-repeat: no-repeat;
+
   background-position:
     center calc(100% - 195px),
     center;
 
   background-size:
-    auto,
+    100% auto,
     100% 100%;
 }
 
@@ -254,6 +250,7 @@ body {
   margin: 0 var(--spacing-300);
   text-align: center;
 }
+
 .hero-text {
   font-family: var(--text-preset-8-font-family);
   font-weight: var(--text-preset-8-font-weight);
@@ -264,6 +261,7 @@ body {
   text-align: center;
   margin: var(--spacing-300) var(--spacing-500);
 }
+
 .primary-cta-button {
   font-family: var(--text-preset-4-font-family);
   font-weight: var(--text-preset-4-font-weight);
@@ -303,12 +301,6 @@ body {
   grid-template-columns: 1fr;
   gap: var(--spacing-1000);
 }
-
-/* @media (min-width: 768px) {
-  ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
 
 .features-list img {
   max-width: 80px;
@@ -671,4 +663,214 @@ input[type="submit"].primary-cta-button {
   display: block;
   padding: 1px;
   box-sizing: border-box;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) {
+  /* TABLET - HEADER */
+
+  .header-main {
+    padding: var(--spacing-1000) var(--spacing-700) 100px;
+  }
+
+  .header-logo {
+    width: 138px;
+  }
+
+  .header-nav-links ul {
+    gap: calc(var(--spacing-600) - 4px);
+  }
+
+  .header-nav-links ul a {
+    font-family: var(--text-preset-3-regular-font-family);
+    font-weight: var(--text-preset-3-regular-font-weight);
+    font-size: var(--text-preset-3-regular-font-size);
+    line-height: var(--text-preset-3-regular-line-height);
+    letter-spacing: var(--text-preset-3-regular-letter-spacing);
+  }
+
+  /* TABLET - HERO SECTION */
+
+  #hero-section {
+    background-image:
+      url("./images/bg-curvy-mobile.svg"),
+      linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent 100%,
+        var(--color-navy-900) 100%,
+        var(--color-navy-900) 100%
+      );
+
+    background-repeat: no-repeat;
+
+    background-position:
+      center 100%,
+      center;
+
+    background-size:
+      100% auto,
+      100% 100%;
+  }
+
+  .hero-image {
+    padding: 0px var(--spacing-700) var(--spacing-800);
+    margin: 0;
+  }
+
+  .hero-headline {
+    font-family: var(--text-preset-1-font-family);
+    font-weight: var(--text-preset-1-font-weight);
+    font-size: var(--text-preset-1-font-size);
+    line-height: var(--text-preset-1-line-height);
+    letter-spacing: var(--text-preset-1-letter-spacing);
+
+    padding: 0px var(--spacing-700) var(--spacing-600);
+  }
+
+  .hero-text {
+    font-family: var(--text-preset-6-font-family);
+    font-weight: var(--text-preset-6-font-weight);
+    font-size: var(--text-preset-6-font-size);
+    line-height: var(--text-preset-6-line-height);
+    letter-spacing: var(--text-preset-6-letter-spacing);
+
+    margin: 0;
+
+    padding: 0px var(--spacing-700) var(--spacing-600);
+  }
+
+  /* TABLET - FEATURES */
+
+  #features-section {
+    padding: 150px var(--spacing-700) 120px;
+  }
+
+  .features-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-img-container {
+    height: 104px;
+    width: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* TABLET - PRODUCT INFORMATION */
+
+  #product-information-section {
+    padding: 0px var(--spacing-700) 90px;
+  }
+
+  #product-information-section h3 {
+    font-family: var(--text-preset-1-font-family);
+    font-weight: var(--text-preset-1-font-weight);
+    font-size: var(--text-preset-1-font-size);
+    line-height: var(--text-preset-1-line-height);
+    letter-spacing: var(--text-preset-1-letter-spacing);
+
+    margin-top: var(--spacing-900);
+    margin-bottom: 0;
+  }
+  #product-information-section p {
+    font-family: var(--text-preset-7-regular-font-family);
+    font-weight: var(--text-preset-7-regular-font-weight);
+    font-size: var(--text-preset-7-regular-font-size);
+    line-height: var(--text-preset-7-regular-line-height);
+    letter-spacing: var(--text-preset-7-regular-letter-spacing);
+
+    margin: var(--spacing-300) 0px;
+  }
+
+  .text-link {
+    margin: var(--spacing-300) 0px;
+  }
+
+  /* TABLET - PRODUCT REVIEW */
+
+  #product-review-section {
+    padding-bottom: var(--spacing-1000);
+  }
+
+  .quote-bg-img {
+    max-width: 79px;
+    margin-left: -24px;
+    margin-bottom: -20px;
+  }
+
+  .quote-bg-img-container {
+    max-width: 480px;
+    margin: auto;
+  }
+
+  #product-review-section ul {
+    gap: var(--spacing-600);
+    max-width: 480px;
+    margin: auto;
+  }
+
+  #product-review-section li {
+    padding: var(--spacing-500);
+  }
+
+  #product-review-section p {
+    font-family: var(--text-preset-8-font-family);
+    font-weight: var(--text-preset-8-font-weight);
+    font-size: var(--text-preset-8-font-size);
+    line-height: var(--text-preset-8-line-height);
+    letter-spacing: var(--text-preset-8-letter-spacing);
+
+    margin-bottom: var(--spacing-300);
+  }
+
+  /* TABLET - SIGN UP SECTION */
+
+  .sign-up-container {
+    padding: var(--spacing-500);
+    max-width: 480px;
+    margin: auto;
+  }
+
+  #sign-up-email {
+    text-align: left;
+    padding-left: var(--spacing-300);
+  }
+
+  /* FOOTER */
+
+  #main-footer {
+    padding: 84px var(--spacing-700) var(--spacing-800);
+  }
+
+  .tablet-layout {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tablet-layout-2 {
+    display: flex;
+    gap: var(--spacing-1000);
+  }
+
+  .sitemap-links {
+    margin: 0;
+    margin-top: var(--spacing-700);
+  }
+
+  .some-links {
+    margin-top: var(--spacing-700);
+  }
+
+  .contact-info p {
+    max-width: 380px;
+  }
 }
