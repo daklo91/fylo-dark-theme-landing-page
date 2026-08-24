@@ -874,3 +874,151 @@ input[type="submit"].primary-cta-button {
     max-width: 380px;
   }
 }
+
+/* DESKTOP */
+
+@media (min-width: 1440px) {
+  /* DESKTOP - HEADER */
+  .header-logo {
+    max-width: 176px;
+  }
+
+  /* DESKTOP - HERO SECTION */
+
+  #hero-section {
+    background-image:
+      url("./images/bg-curvy-desktop.svg"),
+      linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent calc(100% - 10px),
+        var(--color-navy-900) calc(100% - 10px),
+        var(--color-navy-900) 100%
+      );
+  }
+
+  .hero-container {
+    max-width: 734px;
+    width: 100%;
+    margin: auto;
+  }
+
+  /* DESKTOP - FEATURES */
+
+  .features-list {
+    margin: auto;
+    width: fit-content;
+    gap: 160px;
+  }
+
+  .features-list li {
+    max-width: 350px;
+  }
+
+  /* DESKTOP - PRODUCT INFORMATION */
+
+  #product-information-section {
+    display: flex;
+    gap: var(--spacing-700);
+    justify-content: center;
+  }
+
+  #product-information-section img {
+    max-width: 615px;
+  }
+
+  .product-information-container {
+    max-width: 516px;
+  }
+
+  /* DESKTOP - REVIEW */
+
+  #product-review-section ul {
+    flex-direction: row;
+    max-width: none;
+    justify-content: center;
+    gap: var(--spacing-500);
+  }
+
+  #product-review-section li {
+    max-width: 380px;
+  }
+
+  .quote-bg-img-container {
+    max-width: 1180px;
+  }
+
+  .quote-bg-img {
+    margin-left: -32px;
+  }
+
+  /* DESKTOP - SIGN UP */
+
+  #sign-up-section h2 {
+    font-family: var(--text-preset-1-font-family);
+    font-weight: var(--text-preset-1-font-weight);
+    font-size: var(--text-preset-1-font-size);
+    line-height: var(--text-preset-1-line-height);
+    letter-spacing: var(--text-preset-1-letter-spacing);
+  }
+
+  .sign-up-container {
+    max-width: 863px;
+  }
+
+  .form-flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  #sign-up-email {
+    padding-left: var(--spacing-400);
+  }
+
+  #sign-up-error {
+    text-align: left;
+    margin-left: var(--spacing-400);
+    margin-top: var(--spacing-100);
+  }
+
+  input[type="submit"].primary-cta-button {
+    max-width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .form-input-container {
+    width: 100%;
+  }
+
+  .desktop-layout {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    gap: 126px;
+  }
+
+  .tablet-layout {
+    align-items: flex-start;
+    width: 100%;
+    gap: 80px;
+  }
+
+  .sitemap-links {
+    margin-top: 0;
+  }
+
+  .sitemap-links:nth-child(1 of .sitemap-links) {
+    margin-top: 0;
+  }
+
+  .some-links {
+    margin-top: 0;
+  }
+
+  .tablet-layout-2 {
+    margin-left: var(--spacing-1000);
+  }
+}
